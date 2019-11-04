@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      
+      
+
+    <title>Sentry Admin - Update</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-dark">
+
+    <div class="container">
+      <div class="card card-register mx-auto mt-5">
+        <div class="card-header">Update an Officer</div>
+        <div class="card-body">
+            
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="mobile_field" class="form-control" placeholder="Email address" required="required" readonly="readonly">
+                <label for="mobile_field">Mobile Number(+63)</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+<!--              <input type="text" class="form-control" id="rank_field" placeholder="Enter rank" name="rank">-->
+                
+                <select class="form-control" id="rank_field" name="rank">
+                    <option value="1" selected="selected">Police Officer I (PO1)</option>
+                    <option value="2" >Police Officer II (PO2)</option>
+                    <option value="3">Police Officer III (PO3)</option>
+                    <option value="4">Senior Police Officer I (SPO1)</option>
+                    <option value="5">Senior Police Officer II (SPO2)</option>
+                    <option value="6">Senior Police Officer III (SPO3)</option>
+                    <option value="5">Senior Police Officer IV (SPO4)</option>
+                </select>
+                
+                
+                
+            </div>
+
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="first_field" class="form-control" placeholder="First name" required="required">
+                    <label for="first_field">First Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="last_field" class="form-control" placeholder="Last name" required="required">
+                    <label for="last_field">Last Name</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="email" id="email_field" class="form-control" placeholder="Email address" required="required">
+                <label for="email_field">Email Address</label>
+              </div>
+            </div>
+
+            <button id="submit_btn" class="btn btn-default" data-toggle="modal" onclick="updateData()">Submit</button>
+            
+            <div id="updateModal" class="modal fade">
+                <div class="modal-dialog modal-confirm">
+                    <div class="modal-content">
+                        <div class="modal-header">			
+                            <h4 class="modal-title">Updated!</h4>	
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>The list of police officers has been updated.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <a href="officers.html" type="button" class="btn btn-info"><span>Home</span></a>
+    
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      
+      
+      
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBaYNSSEdVDXAplY9o-QZS06hYjkk5b3eI",
+        authDomain: "sentry2-cb914.firebaseapp.com",
+        databaseURL: "https://sentry2-cb914.firebaseio.com",
+        projectId: "sentry2-cb914",
+        storageBucket: "sentry2-cb914.appspot.com",
+        messagingSenderId: "935085583526"
+      };
+      firebase.initializeApp(config);
+        document.getElementById("mobile_field").value = localStorage.getItem("storageMobile");
+    </script>
+    <script src="js\index.js"></script>
+  </body>
+
+</html>

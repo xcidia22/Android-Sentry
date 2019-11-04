@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/ice"
+                    android:title="In Case of Emergency" />
+                <item
+                    android:id="@+id/incidents"
+                    android:title="Incidents" />
+                <item
+                    android:id="@+id/setup_pass"
+                    android:title="Setup Password" />
+                <item
+                    android:id="@+id/encrypt_device"
+                    android:title="Encrypt Device" />
+                <item
+                    android:id="@+id/help_centre"
+                    android:title="Help Centre" />
+                <item
+                    android:id="@+id/about"
+                    android:title="About" />
+        </group>
+</menu>

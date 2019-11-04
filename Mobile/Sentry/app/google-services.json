@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "935085583526",
+    "firebase_url": "https://sentry2-cb914.firebaseio.com",
+    "project_id": "sentry2-cb914",
+    "storage_bucket": "sentry2-cb914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935085583526:android:e55f53aee820e998",
+        "android_client_info": {
+          "package_name": "com.example.meeko.sentry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935085583526-lilvpp1q3meo2cg2srklt39eo2vh36hp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meeko.sentry",
+            "certificate_hash": "a3f488f0e40cb68c88a449f44afc05dd65be6572"
+          }
+        },
+        {
+          "client_id": "935085583526-42rd8uv4j8jh9ssqh727oh3r1kgrever.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meeko.sentry",
+            "certificate_hash": "2b657516644182c26fe3186412c041e7806a1b37"
+          }
+        },
+        {
+          "client_id": "935085583526-lesc5q1gnsejl5mjm1rdhcfh0oq4ava1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIIasYX2WTcInwAn6drg2v-LfCEaWGzNo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935085583526-lesc5q1gnsejl5mjm1rdhcfh0oq4ava1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
